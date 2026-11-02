@@ -26,6 +26,9 @@ public class Account {
     @Column(name = "password", nullable = false, length = 255)
     private String password;
 
+    @Column(name = "department_id")
+    private Long departmentId;
+
     @Column(name = "role_level")
     private Integer roleLevel;
 
@@ -76,6 +79,9 @@ public class Account {
 
     public String getPassword() { return password; }
     public void setPassword(String password) { this.password = password; }
+
+    public Long getDepartmentId() { return departmentId; }
+    public void setDepartmentId(Long departmentId) { this.departmentId = departmentId; }
 
     public Integer getRoleLevel() { return roleLevel; }
     public void setRoleLevel(Integer roleLevel) { this.roleLevel = roleLevel; }

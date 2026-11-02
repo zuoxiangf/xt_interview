@@ -9,6 +9,8 @@ public class AccountDTO {
     private String gender;
     private String phone;
     private String password;
+    private Long departmentId;
+    private String departmentName;
     private Integer roleLevel;
     private Integer status;
     private Integer isSuper;
@@ -34,6 +36,12 @@ public class AccountDTO {
 
     public String getPassword() { return password; }
     public void setPassword(String password) { this.password = password; }
+
+    public Long getDepartmentId() { return departmentId; }
+    public void setDepartmentId(Long departmentId) { this.departmentId = departmentId; }
+
+    public String getDepartmentName() { return departmentName; }
+    public void setDepartmentName(String departmentName) { this.departmentName = departmentName; }
 
     public Integer getRoleLevel() { return roleLevel; }
     public void setRoleLevel(Integer roleLevel) { this.roleLevel = roleLevel; }

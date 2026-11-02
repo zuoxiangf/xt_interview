@@ -1,6 +1,7 @@
 package com.xt.interview.service;
 
 import com.xt.interview.dto.AccountDTO;
+import com.xt.interview.dto.PageResultDTO;
 
 import java.util.List;
 
@@ -15,6 +16,8 @@ public interface AccountService {
     AccountDTO getAccountById(Long id);
 
     List<AccountDTO> getAllAccounts();
+
+    PageResultDTO<AccountDTO> getAccountPage(String username, Integer status, Integer roleLevel, int page, int size);
 
     AccountDTO login(String username, String password);
 }
